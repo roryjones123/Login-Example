@@ -6,11 +6,12 @@ plugins {
     alias(libs.plugins.kotlin)
     alias(libs.plugins.kotlin.kapt)
     alias(libs.plugins.ktlint)
+    alias(libs.plugins.kotlin.serialization)
 }
 
 android {
     compileSdk = 33
-    namespace = "com.rozworks.cleanmvicompostemplate.core"
+    namespace = "com.rozworks.loginexample.core"
 
     with (defaultConfig) {
         minSdk = 24
@@ -19,7 +20,7 @@ android {
 
     // put URL here
     defaultConfig {
-        buildConfigField("String", "SOMETHING_API_URL",  "")
+        buildConfigField("String", "LOCAL_HOST_URL",  "\"http://10.0.2.2:5000\"")
     }
 
     buildFeatures {

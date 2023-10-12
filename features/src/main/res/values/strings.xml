@@ -1,4 +1,48 @@
 <resources>
+
+    <!-- Login -->
+
     <string name="app_name">features</string>
-    <string name="error_fetching_somethings">Error fetching somethings!</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="continue_button">CONTINUE</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="welcome_back_body">Been anywhere nice?</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="sign_up_text">Don\'t have an account? Sign up</string>
+    <string name="forgot_password">Forgot password?</string>
+
+    <!-- Change password modals -->
+
+    <string name="reset_password">Reset Password</string>
+    <string name="set_password">Set the new password to your account here.</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm New Password</string>
+    <string name="passwords_match_warning">Passwords don\'t match!</string>
+
+    <!-- Forgot password email modal -->
+
+    <string name="forgot_password_2">Forgot Password</string>
+    <string name="forgot_password_email">Enter your email for the verification process. We will send a code to your email.</string>
+
+    <!-- Verify code modal -->
+
+    <string name="enter_code">Enter your 5 digit code</string>
+    <string name="enter_code_body">Enter the 5 digit code you received in your email.</string>
+    <string name="fail_verification">Verification failed!</string>
+
+    <!-- Get started -->
+
+    <string name="get_started_body">Returning user? Or first time here?</string>
+    <string name="get_started_title">Get Started</string>
+
+    <!-- Register -->
+
+    <string name="register_body">Your journey starts here</string>
+    <string name="register_title">Sign Up</string>
+    <string name="register">REGISTER</string>
+    <string name="sign_in_text">Already signed up? Sign in</string>
+    <string name="privacy_policy_agreement">I agree with the privacy policy</string>
+    <string name="email">Email</string>
+
 </resources>

@@ -3,11 +3,11 @@ package com.rozworks.core.design
 import androidx.compose.ui.graphics.Color
 
 // Light Theme
-val BlueLight80 = Color(0xFFA8DADC)
-val GreenLight80 = Color(0xFFA8D5BA)
-val PeachLight80 = Color(0xFFFAE1DD)
+val MossLight40 = Color(0xFF2E7D32)
+val GreenLight40 = Color(0xFF4CAF50)
+val GreyLight40 = Color(0xFFF5F5F5)
 
 // Dark Theme
-val BlueDark40 = Color(0xFF1F4E79)
-val GreenDark40 = Color(0xFF1F6F4D)
-val RoseDark40 = Color(0xFF873D48)
+val MossDark40 = Color(0xFF1A4B1E)
+val GreenDark40 = Color(0xFF2E7038)
+val GreyDark40 = Color(0xFF2A2A2A)

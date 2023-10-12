@@ -1,31 +1,35 @@
 package com.rozworks.core.design
 
 import android.app.Activity
-import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.ColorScheme
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.darkColorScheme
-import androidx.compose.material3.dynamicDarkColorScheme
-import androidx.compose.material3.dynamicLightColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.SideEffect
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.toArgb
-import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalView
 import androidx.core.view.WindowCompat
 
+// fix this
 private val DarkColorScheme = darkColorScheme(
-    primary = BlueLight80,
-    secondary = GreenLight80,
-    tertiary = PeachLight80,
+    primary = MossDark40,
+    secondary = GreenDark40,
+    tertiary = GreyDark40,
+    onTertiary = Color.Gray,
+    surface = Color.White,
+    inverseSurface = Color.Black
 )
 
 private val LightColorScheme = lightColorScheme(
-    primary = BlueDark40,
-    secondary = GreenDark40,
-    tertiary = RoseDark40,
+    primary = MossLight40,
+    secondary = GreenLight40,
+    tertiary = GreyLight40,
+    onTertiary = Color.Gray,
+    surface = Color.White,
+    inverseSurface = Color.Black
 )
 
 @Composable
@@ -57,10 +61,6 @@ fun TemplateTheme(
 fun pickColorScheme(
     darkTheme: Boolean,
 ): ColorScheme = when {
-    Build.VERSION.SDK_INT >= Build.VERSION_CODES.S -> {
-        val context = LocalContext.current
-        if (darkTheme) dynamicDarkColorScheme(context) else dynamicLightColorScheme(context)
-    }
     darkTheme -> DarkColorScheme
     else -> LightColorScheme
 }

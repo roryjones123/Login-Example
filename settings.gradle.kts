@@ -14,7 +14,7 @@ dependencyResolutionManagement {
 }
 
 
-rootProject.name = "Clean-MVI-Compose-Template"
+rootProject.name = "login-example"
 include(":app")
 include(":features")
 include(":core")

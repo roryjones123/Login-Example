@@ -13,7 +13,7 @@ fun NavigationHost(
 ) {
     NavHost(
         navController = navController,
-        startDestination = NavigationDestination.Homepage.route,
+        startDestination = NavigationDestination.GetStarted.route,
         modifier = modifier,
     ) {
         factories.forEach {
