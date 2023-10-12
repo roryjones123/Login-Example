@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="dimen_small">8dp</dimen>
-    <dimen name="dimen_medium">16dp</dimen>
-    <dimen name="dimen_large">24dp</dimen>
+    <dimen name="dimen_small">5dp</dimen>
+    <dimen name="dimen_medium">10dp</dimen>
+    <dimen name="dimen_large">20dp</dimen>
+    <dimen name="dimen_extra_large">28dp</dimen>
+    <dimen name="dimen_huge">50dp</dimen>
+    <dimen name="dimension_extra_huge">100dp</dimen>
+
+
+    <dimen name="edit_text_padding">8dp</dimen>
+    <dimen name="edit_text_corners">25dp</dimen>
+
+    <dimen name="clickable_text_corners">18dp</dimen>
+    <dimen name="round_corners">50dp</dimen>
+    <dimen name="big_button_size">60dp</dimen>
+
+    <dimen name="forgot_code_input_spacing">25dp</dimen>
+    <dimen name="forgot_code_input_corners">8dp</dimen>
+    <dimen name="forgot_code_input_width">48dp</dimen>
+
 </resources>

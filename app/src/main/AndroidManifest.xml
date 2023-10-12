@@ -13,12 +13,13 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.CleanMVIComposeTemplate"
+        android:theme="@style/Theme.LoginExample"
+        android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name="com.rozworks.cleanmvicomposetemplate.MainActivity"
+            android:name="com.rozworks.loginexample.MainActivity"
             android:exported="true"
-            android:theme="@style/Theme.CleanMVIComposeTemplate">
+            android:theme="@style/Theme.LoginExample">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

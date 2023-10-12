@@ -11,7 +11,7 @@ plugins {
 
 android {
     compileSdk = 33
-    namespace = "com.rozworks.cleanmvicomposetemplate.features"
+    namespace = "com.rozworks.loginexample.features"
 
     with (defaultConfig) {
         minSdk = 24

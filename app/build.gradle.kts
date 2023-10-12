@@ -9,11 +9,11 @@ plugins {
 }
 
 android {
-    namespace = "com.rozworks.cleanmvicomposetemplate"
+    namespace = "com.rozworks.loginexample"
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "com.rozworks.cleanmvicomposetemplate"
+        applicationId = "com.rozworks.loginexample"
         minSdk = 24
         targetSdk = 33
         versionCode = 1
