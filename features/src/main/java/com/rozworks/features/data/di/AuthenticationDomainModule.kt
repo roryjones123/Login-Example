@@ -1,5 +1,6 @@
 package com.rozworks.features.data.di
 
+import com.rozworks.core.SecureStorageDataSource
 import dagger.Binds
 import dagger.Module
 import dagger.Provides
@@ -30,9 +31,10 @@ internal object AuthenticationDomainModule {
     @Provides
     @Singleton
     fun provideLoginUseCase(
-        authenticationRepository: AuthenticationRepository
+        authenticationRepository: AuthenticationRepository,
+        secureStorageDataSource: SecureStorageDataSource
     ): LoginUseCase {
-        return LoginUseCase(authenticationRepository)
+        return LoginUseCase(authenticationRepository, secureStorageDataSource)
     }
 
     @Provides

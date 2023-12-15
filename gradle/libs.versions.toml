@@ -25,6 +25,7 @@ okhttp-logging-interceptor          = "4.11.0"
 retrofit                            = "2.9.0"
 room                                = "2.5.2"
 timber                              = "5.0.1"
+security-crypto                     = "1.0.0"
 
 # test libraries
 test-junit                          = "5.10.0"
@@ -71,6 +72,7 @@ room                                = { module = "androidx.room:room-runtime", v
 room-compiler                       = { module = "androidx.room:room-compiler", version.ref = "room" }
 room-ktx                            = { module = "androidx.room:room-ktx", version.ref = "room" }
 timber                              = { module = "com.jakewharton.timber:timber", version.ref = "timber" }
+security-crypto                     = { module = "androidx.security:security-crypto", version.ref = "security-crypto" }
 
 # test libraries
 test-junit                          = { module = "org.junit.jupiter:junit-jupiter", version.ref = "test-junit" }

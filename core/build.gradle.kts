@@ -67,6 +67,8 @@ dependencies {
     implementation(libs.okhttp.logging.interceptor)
     implementation(libs.retrofit)
     implementation(libs.timber)
+    implementation(libs.security.crypto)
+
     androidTestImplementation(libs.bundles.common.android.test)
 
     kapt(libs.hilt.compiler)

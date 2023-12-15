@@ -1,6 +1,7 @@
 package com.rozworks.core.navigation
 
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.MutableState
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
@@ -10,14 +11,17 @@ fun NavigationHost(
     navController: NavHostController,
     factories: Set<NavigationFactory>,
     modifier: Modifier = Modifier,
+    startingDestination: String,
+    showBottomNav: MutableState<Boolean>,
+    showTopBar: MutableState<Boolean>
 ) {
     NavHost(
         navController = navController,
-        startDestination = NavigationDestination.GetStarted.route,
-        modifier = modifier,
+        startDestination = startingDestination,
+        modifier = modifier
     ) {
         factories.forEach {
-            it.create(this)
+            it.create(this, showBottomNav, showTopBar)
         }
     }
 }
